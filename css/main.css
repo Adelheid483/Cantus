@@ -1,0 +1,330 @@
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Great Vibes', cursive;
+*/
+
+html, body {
+	font: 400 16px 'Open Sans', sans-serif;
+}
+
+.container {
+	max-width: 1835px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+
+.container_570 {
+	max-width: 600px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+	text-align: left;
+	box-sizing: border-box;
+}
+
+*:hover {
+	transition: 0.4s ease-out;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/* --------- Заголовок ----------- */
+
+
+.title h2 {
+	font: 400 32px 'Oswald', sans-serif;
+	text-transform: uppercase;
+	line-height: 0.94;
+}
+
+.title p {
+	font: 400 32px 'Great Vibes', cursive;
+	color: #df001f;
+	line-height: 0.94;
+}
+
+.title {
+	margin-bottom: 30px;
+}
+
+/* ....................................
+
+          SECTION 1 - MENU
+
+........................................*/
+
+.header {
+	padding: 10px 0;
+	background-color: #df001f;
+}
+
+.header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.header_menu ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.header_menu li:not(:first-of-type) {
+	margin-left: 20px;
+}
+
+.header_menu a {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 13px;
+	line-height: 3.38;
+}
+
+.header_menu a:hover {
+	text-decoration: line-through;
+}
+
+
+.header_logo {
+	position: relative;
+}
+
+.header_logo p{
+	font: 400 65px 'Great Vibes', cursive;
+	color: #fff;
+	line-height: 0.46;
+	position: absolute;
+	transform: rotate(-10deg);
+	top: 27px;
+	left: -25px;
+	background-color: #df001f;
+}
+
+
+.header_sotial {
+	display: flex;
+	align-items: center;
+}
+
+.header_sotial i {
+	color: #fff;
+	line-height: 1;
+	font-size: 22px;
+	margin-right: 10px;
+}
+
+.header_sotial p {
+	color: #fff;
+	line-height: 2.14;
+	font-size: 14px;
+	margin-right: 50px;
+}
+
+.button a.header_button {
+	color: #df001f;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.header_button {
+	background-color: #fff;
+	border-radius: 50px;
+	padding: 20px 35px; 
+	display: inline-block;
+	white-space: nowrap;
+}
+
+.header_button:hover {
+	box-shadow:  0 0 20px 15px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+
+
+/* ....................................
+
+          SECTION 2 - BANNER
+
+........................................*/
+
+.banner {
+	background: url("../img/bg.png") no-repeat center;
+	background-size: cover;
+	padding: 150px 0;
+	position: relative;
+	z-index: 0;
+}
+
+.banner:before {
+	content: "";
+	background-color: rgba(0, 0, 0, .8);
+	top: 0; bottom: 0; left: 0; right: 0;
+	position: absolute;
+	z-index: 1;
+}
+
+.banner .title {
+	margin-bottom: 0;
+	color: #fff;
+	position: relative;
+	z-index: 2;
+}
+
+.banner .title h2 {
+	font-size: 65px;
+	
+}
+
+.banner .title p {
+	font-size: 45px;
+	color: #fff;
+}
+
+
+/* ....................................
+
+          SECTION 3 - MUSICIAN
+
+........................................*/
+
+/*---musician_description---*/
+.musician {
+	padding: 80px 0 0 0;
+}
+
+.musician_photo img {
+	max-width: 570px;
+}
+
+.musician_photo {
+	margin-bottom: 45px;
+}
+
+.musician_text p {
+	line-height: 1.94;
+	color: #111;
+}
+
+.musician_text {
+	margin-bottom: 95px;
+}
+
+/*---musitian_songs---*/
+.musitian_songs_list {
+	display: flex;
+	line-height: 2.5;
+	color: #333;
+	margin-bottom: 140px;
+}
+
+.musitian_songs_list li {
+	border-bottom: 1px solid #ebebeb;
+	width: 200px;
+}
+
+.musitian_songs_list li:first-child {
+	margin-right: 60px;
+}
+
+/*---musitian_subscribe---*/
+.musitian_subscribe form {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.musitian_subscribe {
+/*	padding-bottom: 10px;*/
+	border-bottom: 4px solid #999;
+	margin-bottom: 70px;
+}
+
+textarea::placeholder {
+	font: 400 16px 'Open Sans', sans-serif;
+	color: #282828;
+	line-height: 1.56;
+	letter-spacing: 5;
+}
+
+textarea {
+	font: 400 16px 'Open Sans', sans-serif;
+	color: #000;
+	font-style: italic;
+	resize: none;
+	border: none;
+	width: 400px;
+}
+
+textarea:focus {
+	border: 1px solid #df001f;
+}
+
+button {
+	color: #df001f;
+	font-size: 14px;
+	border: none;
+	background-color: transparent;
+}
+
+
+
+/* ....................................
+
+          SECTION 4 - FOOTER
+
+........................................*/
+
+.footer {
+	border-top: 1px solid #d2d2d2;
+	padding-top: 70px;
+	padding-bottom: 80px;
+}
+
+.footer_menu ul {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+	flex-wrap: wrap;
+}
+
+.footer_menu li {
+	margin: 0 20px 20px;
+}
+
+.footer_menu a {
+	color: #333;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+.footer_menu a:hover {
+	color: #df001f;
+}
+
+.footer_copyright p {
+	font-size: 13px;
+	color: #333;
+	line-height: 1;
+}
+
+.footer_copyright span {
+	font: 400 28px 'Great Vibes', cursive;
+	color: #df001f;
+	line-height: 0.35;
+}
+
+
+
+
+
+
